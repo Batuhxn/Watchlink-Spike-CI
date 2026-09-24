@@ -1,0 +1,17 @@
+[package]
+name = "watchlink-vodozemac-feasibility"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+name = "watchlink_vodozemac_feasibility"
+crate-type = ["cdylib", "rlib", "staticlib"]
+
+[dependencies]
+vodozemac = { git = "https://github.com/matrix-org/vodozemac.git", rev = "db1b34820f3102307284e762f335b3f72c735bf0", version = "=0.11.0", default-features = false }
+uniffi = { version = "=0.32.2", features = ["cli"] }
+serde_json = "=1.0.151"
+thiserror = "=2.0.20"
+rusqlite = { version = "=0.37.0", features = ["bundled"] }

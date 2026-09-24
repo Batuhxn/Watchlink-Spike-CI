@@ -1,0 +1,7 @@
+module watchlink_vodozemac_feasibilityFFI {
+    header "watchlink_vodozemac_feasibilityFFI.h"
+    export *
+    use "Darwin"
+    use "_Builtin_stdbool"
+    use "_Builtin_stdint"
+}

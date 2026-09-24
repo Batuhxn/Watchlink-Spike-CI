@@ -1,0 +1,7 @@
+/rust/target/
+/swift/Artifacts/
+/swift/.build/
+/build/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
