@@ -81,8 +81,8 @@ jobs:
           rustup default 1.98.1
           rustc --version
           cargo --version
-          rustup target add aarch64-apple-ios aarch64-apple-ios-sim
-      - name: Build and verify isolated arm64 XCFramework
+          rustup target add aarch64-apple-ios aarch64-apple-ios-sim x86_64-apple-ios
+      - name: Build and verify isolated universal simulator XCFramework
         run: spikes/vodozemac-m3b4-feasibility/scripts/build-ios.sh
       - name: Compile isolated Swift and XCTest with Xcode 26.3
         run: spikes/vodozemac-m3b4-feasibility/scripts/test-ios.sh compile
